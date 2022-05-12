@@ -25,7 +25,14 @@
   <main>
     <h1>Our Notes</h1>
     <div class="notes-wrapper">
-    </div>
+      <% for(let note of noteLists) { %>
+        <div class="note">
+          <h3>Title: <%= note.title %></h3>
+          <p>Memo: <%= note.note %></p>
+          <h4>From: <%= note.user %></h4>
+        </div>
+      <% } %>
+    </ul>
   </main>
 </body>
 </html>
